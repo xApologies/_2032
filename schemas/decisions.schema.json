@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decision record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "epistemic_status",
+    "recorded_on",
+    "summary",
+    "source_ids",
+    "disposition",
+    "authority",
+    "scope",
+    "rationale",
+    "alternatives",
+    "supersedes_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "epistemic_status": {
+      "enum": [
+        "PERSONAL RECOLLECTION",
+        "DESIGN HYPOTHESIS",
+        "EXTERNALLY VERIFIED FACT",
+        "POLICY PROPOSAL",
+        "SIMULATION RESULT",
+        "ADOPTED PROJECT DECISION"
+      ]
+    },
+    "recorded_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "disposition": {
+      "enum": [
+        "proposed",
+        "adopted",
+        "superseded",
+        "rejected"
+      ]
+    },
+    "authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "supersedes_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "const": "adopted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authority": {
+            "type": "string",
+            "minLength": 1
+          },
+          "epistemic_status": {
+            "const": "ADOPTED PROJECT DECISION"
+          },
+          "source_ids": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

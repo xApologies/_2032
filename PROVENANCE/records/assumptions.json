@@ -1,0 +1,15 @@
+[
+  {
+    "id": "A-0001",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Public or synthetic scenarios can exercise the initial architecture.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "owner_role": "Evaluation lead (unassigned)",
+    "falsification_condition": "Required failure modes cannot be represented without sensitive or real participant data.",
+    "review_on": "2027-01-01",
+    "state": "open"
+  }
+]

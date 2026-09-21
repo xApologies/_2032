@@ -1,0 +1,15 @@
+[
+  {
+    "id": "U-0001",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Meaningful improvement margins and safety bounds are not yet established.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "owner_role": "Evaluation lead (unassigned)",
+    "impact": "Cannot declare architecture superiority.",
+    "resolution_path": "Pre-register metrics and thresholds with independent human reviewers.",
+    "state": "open"
+  }
+]

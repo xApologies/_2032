@@ -1,0 +1,54 @@
+[
+  {
+    "id": "D-0001",
+    "epistemic_status": "ADOPTED PROJECT DECISION",
+    "recorded_on": "2026-09-21",
+    "summary": "Preserve canonical repository history and use the requested branch without merging.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "disposition": "adopted",
+    "authority": "Genesis via SRC-0001",
+    "scope": "Project repository bootstrap only",
+    "rationale": "Explicit MISSION and GIT PROCEDURE requirements.",
+    "alternatives": [
+      "Create a separate repository: excluded by directive."
+    ],
+    "supersedes_ids": []
+  },
+  {
+    "id": "D-0002",
+    "epistemic_status": "ADOPTED PROJECT DECISION",
+    "recorded_on": "2026-09-21",
+    "summary": "Preserve human authority, Astraeus/Vera roles, epistemic categories, and public/synthetic evaluation.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "disposition": "adopted",
+    "authority": "Genesis via SRC-0001",
+    "scope": "Project architecture requirements; no governmental authority",
+    "rationale": "Explicit design and provenance constraints.",
+    "alternatives": [
+      "Autonomous AI governmental authority: excluded."
+    ],
+    "supersedes_ids": []
+  },
+  {
+    "id": "D-0003",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Use a single ledger and simple JSON Schema records.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "disposition": "proposed",
+    "authority": null,
+    "scope": "Bootstrap artifact organization",
+    "rationale": "Avoid divergent ledgers and make records inspectable.",
+    "alternatives": [
+      "Separate duplicated ledgers",
+      "Database-backed registry"
+    ],
+    "supersedes_ids": []
+  }
+]

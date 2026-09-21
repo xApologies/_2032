@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workstream record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "epistemic_status",
+    "recorded_on",
+    "summary",
+    "source_ids",
+    "path",
+    "owner_role",
+    "deliverables",
+    "dependency_ids",
+    "acceptance_criteria",
+    "state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "epistemic_status": {
+      "enum": [
+        "PERSONAL RECOLLECTION",
+        "DESIGN HYPOTHESIS",
+        "EXTERNALLY VERIFIED FACT",
+        "POLICY PROPOSAL",
+        "SIMULATION RESULT",
+        "ADOPTED PROJECT DECISION"
+      ]
+    },
+    "recorded_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "dependency_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "state": {
+      "enum": [
+        "planned",
+        "active",
+        "blocked",
+        "complete"
+      ]
+    }
+  }
+}

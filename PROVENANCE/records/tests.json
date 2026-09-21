@@ -1,0 +1,32 @@
+[
+  {
+    "id": "T-0001",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Compare conflicting-source briefing workflows.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "scenario": "Identical synthetic packet with seeded contradiction and unsupported assertion.",
+    "baseline": "Conventional human brief with source access.",
+    "candidate": "AI-assisted brief plus human domain review.",
+    "metrics": [
+      "time_to_usable_brief",
+      "factual_error_rate",
+      "material_omissions",
+      "contradictions_detected",
+      "unsupported_assertions",
+      "source_recovery_time",
+      "comprehension",
+      "staff_hours",
+      "rework",
+      "accessibility",
+      "security_failures",
+      "audit_failures",
+      "predicted_vs_observed"
+    ],
+    "acceptance_rule": "Pre-register gains and safety bounds before execution; redesign or reject if no advantage over simpler workflow.",
+    "state": "planned",
+    "result": null
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "C-0001",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Voice and movement support may improve intended-operator comprehension.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "inference": "The directive describes an operator preference; measurable benefit is a hypothesis requiring comparison.",
+    "supporting_claim_ids": [],
+    "evidence_locators": [
+      "SRC-0001: HUMAN FACTORS"
+    ],
+    "verification": null
+  }
+]
