@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Test record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "epistemic_status",
+    "recorded_on",
+    "summary",
+    "source_ids",
+    "scenario",
+    "baseline",
+    "candidate",
+    "metrics",
+    "acceptance_rule",
+    "state",
+    "result"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "epistemic_status": {
+      "enum": [
+        "PERSONAL RECOLLECTION",
+        "DESIGN HYPOTHESIS",
+        "EXTERNALLY VERIFIED FACT",
+        "POLICY PROPOSAL",
+        "SIMULATION RESULT",
+        "ADOPTED PROJECT DECISION"
+      ]
+    },
+    "recorded_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "acceptance_rule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "enum": [
+        "planned",
+        "running",
+        "complete"
+      ]
+    },
+    "result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state": {
+            "const": "complete"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "string",
+            "minLength": 1
+          },
+          "epistemic_status": {
+            "const": "SIMULATION RESULT"
+          }
+        }
+      }
+    }
+  ]
+}

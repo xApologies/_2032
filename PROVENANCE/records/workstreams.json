@@ -1,0 +1,326 @@
+[
+  {
+    "id": "W-0000",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Project identity, design constraints, terminology, and decision authority.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "00_CANON/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Project identity, design constraints, terminology, and decision authority."
+    ],
+    "dependency_ids": [],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0001",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Persistent domain collaboration and decision support.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "01_PRESIDENT_STACK/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Persistent domain collaboration and decision support."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0002",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Room-scale spoken reasoning and shared visual context.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "02_WAR_ROOM/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Room-scale spoken reasoning and shared visual context."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0003",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Movement-first continuity across phone, room, travel, and workstation.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "03_MOBILE_INTERFACE/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Movement-first continuity across phone, room, travel, and workstation."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0004",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Astraeus synthesis with Vera provenance and audit.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "04_AI_ARCHITECTURE/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Astraeus synthesis with Vera provenance and audit."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0005",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Responsibility, delegation, and cross-domain escalation.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "05_EXECUTIVE_ORGANIZATION/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Responsibility, delegation, and cross-domain escalation."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0006",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Prospective domain-expert interfaces and evidence requirements.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "06_CABINET/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Prospective domain-expert interfaces and evidence requirements."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0007",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Explicitly bounded prospective coordination and continuity.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "07_VICE_PRESIDENCY/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Explicitly bounded prospective coordination and continuity."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0008",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Empirically evaluable education research.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "08_CLOVER/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Empirically evaluable education research."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0009",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Evidence-based research into veteran services and outcomes.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "09_VA_REFORM/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Evidence-based research into veteran services and outcomes."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0010",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Capabilities, invariants, and independent review.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "10_SECURITY/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Capabilities, invariants, and independent review."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0011",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Accessible movement, speech, conversation, and visual supplementation.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "11_HUMAN_FACTORS/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Accessible movement, speech, conversation, and visual supplementation."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0012",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Evidence-gated development from 2026 through 2032.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "12_SIX_YEAR_ROADMAP/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Evidence-gated development from 2026 through 2032."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0013",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Falsifiable comparison against simpler workflows.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "13_SIMULATION_AND_TESTING/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Falsifiable comparison against simpler workflows."
+    ],
+    "dependency_ids": [
+      "W-0000",
+      "W-0014"
+    ],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  },
+  {
+    "id": "W-0014",
+    "epistemic_status": "DESIGN HYPOTHESIS",
+    "recorded_on": "2026-09-21",
+    "summary": "Recoverable lineage, chronology, uncertainty, and decision history.",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "path": "PROVENANCE/README.md",
+    "owner_role": "Genesis for project direction; domain lead unassigned",
+    "deliverables": [
+      "Recoverable lineage, chronology, uncertainty, and decision history."
+    ],
+    "dependency_ids": [],
+    "acceptance_criteria": [
+      "Traceable evidence, explicit uncertainty, and human review before adoption."
+    ],
+    "state": "planned"
+  }
+]

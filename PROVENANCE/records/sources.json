@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SRC-0001",
+    "epistemic_status": "ADOPTED PROJECT DECISION",
+    "recorded_on": "2026-09-21",
+    "summary": "User-supplied canonical bootstrap directive.",
+    "source_ids": [],
+    "originating_actor": "Genesis (as attributed by supplied directive)",
+    "origin_timestamp": null,
+    "retrieved_on": "2026-09-21",
+    "locator": "PROVENANCE/sources/BOOTSTRAP_DIRECTIVE.txt",
+    "evidence_locator": "Complete directive, MISSION through FINAL REPORT",
+    "sha256": "59cef79f207da7adec8075a1b35451d395990c04f872e0966fc08f296b189cf7",
+    "limitations": "Authority for project intent only; receipt date is known, authorship timestamp and external identity are not independently verified."
+  }
+]

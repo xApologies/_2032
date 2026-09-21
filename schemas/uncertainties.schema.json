@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Uncertainty record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "epistemic_status",
+    "recorded_on",
+    "summary",
+    "source_ids",
+    "owner_role",
+    "impact",
+    "resolution_path",
+    "state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "epistemic_status": {
+      "enum": [
+        "PERSONAL RECOLLECTION",
+        "DESIGN HYPOTHESIS",
+        "EXTERNALLY VERIFIED FACT",
+        "POLICY PROPOSAL",
+        "SIMULATION RESULT",
+        "ADOPTED PROJECT DECISION"
+      ]
+    },
+    "recorded_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "owner_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "impact": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resolution_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "enum": [
+        "open",
+        "resolved",
+        "accepted"
+      ]
+    }
+  }
+}

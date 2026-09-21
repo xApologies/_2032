@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "epistemic_status",
+    "recorded_on",
+    "summary",
+    "source_ids",
+    "originating_actor",
+    "origin_timestamp",
+    "retrieved_on",
+    "locator",
+    "evidence_locator",
+    "sha256",
+    "limitations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "epistemic_status": {
+      "enum": [
+        "PERSONAL RECOLLECTION",
+        "DESIGN HYPOTHESIS",
+        "EXTERNALLY VERIFIED FACT",
+        "POLICY PROPOSAL",
+        "SIMULATION RESULT",
+        "ADOPTED PROJECT DECISION"
+      ]
+    },
+    "recorded_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "originating_actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin_timestamp": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
+      ]
+    },
+    "retrieved_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
